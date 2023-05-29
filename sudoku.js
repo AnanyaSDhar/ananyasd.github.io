@@ -202,6 +202,8 @@ function clearBoard() {
           if(!tile.classList.contains("tile-start")){
               tile.innerText="";
               startTime = Date.now();
+              errors = 0;
+              document.getElementById("errors").innerText = 0;
           }
       }
    }
