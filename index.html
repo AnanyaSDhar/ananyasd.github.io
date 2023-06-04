@@ -5,15 +5,26 @@
         <title>Sudoku</title>
 
         <link rel="stylesheet" href="sudoku.css">
-        <script src="sudoku.js" type="text/javascript"></script>
+        <script src="sudoku.js"></script>
     </head>
 
     <body>
         <h1>SUDOKU</h1>
         <hr>
         <div id="start-screen">
+            <label for="difficulty">Select difficulty:</label>
+            <select id="difficulty">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+              <option value="very-hard">Very Hard</option>
+              <option value="insane">Insane</option>
+              <option value="inhuman">Inhuman</option>
+            </select><br>
+             <!-- Add a line break here -->
             <button id="start-button">START</button>
         </div>
+          
         
         <div id="status">
             <div id="timer">00:00</div>
@@ -30,10 +41,11 @@
             <button id="ok-button">OK</button>
             <button id="play-again-button">Play Again</button>
         </div>
-        <div id="celebration">
+        
+        <!-- <div id="celebration">
             <img src="confetti2.gif" alt="Confetti">
             <h2>You did it!</h2>
-        </div>
+        </div> -->
         <img id="play-again-logo" src="play-again-logo.jpg">
 
         <div id="overlay"></div>
@@ -46,3 +58,4 @@
 
 
 </html>
+
